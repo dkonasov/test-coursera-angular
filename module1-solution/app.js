@@ -1,8 +1,8 @@
 (function(){
-    angular.module("module1-solution", [])
-    .controller("itemsController", itemsController);
-    itemsController.$inject = ["$scope"];
-    function itemsController($scope){
+    angular.module("LunchCheck", [])
+    .controller("LunchCheckController", LunchCheckController);
+    LunchCheckController.$inject = ["$scope"];
+    function LunchCheckController($scope){
         $scope.items = "";
         $scope.output = "";
         $scope.checkItems = function(){
