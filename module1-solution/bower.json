@@ -1,0 +1,21 @@
+{
+  "name": "module1-solution",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dmitriy Konasov <dkonasov@teh-lab.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dkonasov/test-coursera-angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
