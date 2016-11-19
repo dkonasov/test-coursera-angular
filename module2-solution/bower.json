@@ -1,0 +1,14 @@
+{
+  "name": "module2-solution",
+  "homepage": "https://github.com/dkonasov/test-coursera-angular",
+  "authors": [
+    "Dmitriy Konasov <dkonasov@teh-lab.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
