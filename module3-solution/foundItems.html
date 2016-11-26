@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div ng-if="message.length > 0" class="col-xs-12">{{message}}</div>
+  <div class="col-xs-12" ng-repeat="item in itemsList">
+    <h2>{{item.name}}</h2>
+    <p>
+      {{item.short_name}}
+    </p>
+    <p>{{item.description}}</p>
+    <div>
+      <button class="btn btn-danger" ng-click="onRemove({index: $index})">Don't want this one!</button>
+    </div>
+  </div>
+</div>
