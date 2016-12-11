@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Sign Up</h2>
+  <div class="row">
+    <form name="signupForm" class="col-xs-12 col-sm-12 col-md-12 col-lg-6" novalidate ng-submit="signup.submitForm()">
+      <p class="text-success" ng-if="signup.submitted">Your information has been saved</p>
+      <div class="form-group">
+        <label for="firstName">First name</label><br />
+        <input type="text" class="form-control" name="firstName" ng-model="signup.user.firstName" required/>
+        <div class="text-danger" ng-if="signupForm.firstName.$invalid && signupForm.firstName.$touched">First name is required</div>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last name</label><br />
+        <input type="text" class="form-control" name="lastName" ng-model="signup.user.lastName" required/>
+        <div class="text-danger" ng-if="signupForm.lastName.$invalid && signupForm.lastName.$touched">Last name is required</div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label><br />
+        <input type="email" class="form-control" name="email" ng-model="signup.user.email" required/>
+        <div class="text-danger" ng-if="signupForm.email.$error.required && signupForm.email.$touched">Email is required</div>
+        <div class="text-danger" ng-if="signupForm.email.$error.email && signupForm.email.$touched">Please, provide email in correct format</div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label><br />
+        <input type="text" class="form-control" name="phone" ng-model="signup.user.phone" required/>
+        <div class="text-danger" ng-if="signupForm.phone.$invalid && signupForm.phone.$touched">Phone is required</div>
+      </div>
+      <div class="form-group">
+        <label for="favoriteDish">Favorite dish</label><br />
+        <input type="text" class="form-control" name="favoriteDish" ng-model="signup.user.favoriteDish" required favorite-dish/>
+        <div class="text-danger" ng-if="signupForm.favoriteDish.$error.required && signupForm.favoriteDish.$touched">Please, provide information about your favorite dish!</div>
+        <div class="text-danger" ng-if="signupForm.favoriteDish.$error.favoriteDish && signupForm.favoriteDish.$dirty">No such menu number exists</div>
+      </div>
+      <button type="submit" class="btn btn-primary" ng-disabled="signupForm.$invalid">Submit</button>
+    </form>
+  </div>
+</div>
